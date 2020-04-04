@@ -15,6 +15,11 @@ body {
   margin: 0;
 }
 
+strong{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
 nav {
   font-family: 'Merriweather', serif;
   background-color: #2E3942;

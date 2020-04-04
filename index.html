@@ -16,9 +16,9 @@
         <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
         <a href="#Hello_World_Example" class="nav-link">Hello world Example</a>
         <a href="#Variables_In_Javascript" class="nav-link">Variables In JavaScript</a>
-        <a href="#Declaring_Variables" class="nav-link">Declaring variables</a>
+
         <a href="https://twitter.com/BenjaminTheDev" target="_blank">Made By BenjaminTheDev</a>
-        <a href="https://codepen.io/freeCodeCamp/full/NdrKKL" target="_blank">Inspired By This!</a>
+
 
 
 
@@ -105,6 +105,7 @@
 
         <section class="main-section" id="Hello_World_Example">
             <header>Hello World Example</header>
+
             <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
                 code:</p>
 
@@ -120,29 +121,54 @@
 
         <section class="main-section" id="Variables_In_Javascript">
             <header>Variables In JavaScript</header>
-            <p>You use variables as symbolic names for values in your application. The names of variables, called
-                identifiers, conform
-                to certain rules.</p>
+            <p>Most useful programs need to track a value as it changes over the course of the program, undergoing
+                different operations
+                as called for by your program's intended tasks.</p>
 
-            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent
-                characters can also be
-                digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z"
-                (uppercase) and the
-                characters "a" through "z" (lowercase).</p>
+            <p>The easiest way to go about that in your program is to assign a value to a symbolic container, called a
+                variable -- so
+                called because the value in this container can vary over time as needed.</p>
 
-            <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode
-                escape sequences
-                as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+            <p>In some programming languages, you declare a variable (container) to hold a specific type of value, such
+                as number or
+                string. Static typing, otherwise known as type enforcement, is typically cited as a benefit for program
+                correctness by
+                preventing unintended value conversions.</p>
 
+            <p>Other languages emphasize types for values instead of variables. Weak typing, otherwise known as dynamic
+                typing, allows
+                a variable to hold any type of value at any time. It's typically cited as a benefit for program
+                flexibility by allowing
+                a single variable to represent a value no matter what type form that value may take at any given moment
+                in the program's
+                logic flow.</p>
+
+            <p>JavaScript uses the latter approach, dynamic typing, meaning variables can hold values of any type
+                without any type
+                enforcement.</p>
+
+            <p>As mentioned earlier, we declare a variable using the <strong>var statement</strong> -- notice there's no
+                other
+                type information in the
+                declaration. Consider this simple program:</p>
+
+            <pre><span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+                    
+                    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> * <span class="pl-c1">2</span><span class="pl-kos">;</span>
+                    
+                    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// 199.98</span>
+                    
+                    <span class="pl-c">// convert `amount` to a string, and</span>
+                    <span class="pl-c">// add "$" on the beginning</span>
+                    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s">"$"</span> <span class="pl-c1">+</span> <span class="pl-v">String</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+                    
+                    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// "$199.98"</span></pre>
 
         </section>
 
-        <section class="main-section" id="Declaring_Variables">
+        <!-- <section class="main-section" id="Declaring_Variables">
             <header>Declaring Variables</header>
-
-
-
-        </section>
+        </section> -->
     </main>
 
 
